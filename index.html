@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helping Hands NGO — Project Landing</title>
+  <style>
+    :root {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #111827;
+      background: #f8fafc;
+      line-height: 1.6;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 32px;
+    }
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
+      border-radius: 28px;
+      padding: 42px 36px;
+      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.14);
+      overflow: hidden;
+      color: white;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.25), transparent 32%), radial-gradient(circle at bottom left, rgba(255, 255, 255, 0.18), transparent 24%);
+      pointer-events: none;
+    }
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.4rem, 4vw, 3.6rem);
+      letter-spacing: -0.06em;
+      position: relative;
+      z-index: 1;
+    }
+    .subtitle {
+      margin: 0 0 24px;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 1.05rem;
+      position: relative;
+      z-index: 1;
+    }
+    .hero .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 16px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .section {
+      margin-top: 32px;
+      padding: 26px;
+      background: white;
+      border-radius: 22px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+    }
+    .section h2 {
+      margin-top: 0;
+    }
+    .link-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .feature-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+      padding-left: 0;
+      list-style: none;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 1rem;
+      color: #334155;
+    }
+    .feature-list li::before {
+      content: "✔";
+      color: #2563eb;
+      min-width: 20px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 18px;
+      background: #ffffff;
+    }
+    .card a {
+      display: inline-block;
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .card p {
+      margin: 0;
+      color: #475569;
+      font-size: 0.95rem;
+    }
+    .note {
+      border-left: 4px solid #f59e0b;
+      background: #fffbeb;
+      padding: 18px;
+      color: #92400e;
+      margin-bottom: 16px;
+      border-radius: 14px;
+    }
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: white;
+      background: #2563eb;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    .button:hover {
+      transform: translateY(-1px);
+      background: #1d4ed8;
+    }
+    pre {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 16px;
+      border-radius: 16px;
+      overflow-x: auto;
+      margin: 0;
+    }
+    .tip {
+      background: #e0f2fe;
+      border-left: 4px solid #0284c7;
+      padding: 16px;
+      border-radius: 14px;
+      color: #0f172a;
+      margin: 20px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <h1>Helping Hands NGO</h1>
+      <p class="subtitle">A complete NGO website built with PHP and MySQL for donations, volunteer management, event scheduling, and reporting.</p>
+      <div class="badges">
+        <span class="badge">Donation Management</span>
+        <span class="badge">Volunteer Registration</span>
+        <span class="badge">Event Calendar</span>
+        <span class="badge">Reports & Documentation</span>
+      </div>
+      <div class="button-group">
+        <a class="button" href="#overview">Project Overview</a>
+        <a class="button" href="#file-list">Explore Files</a>
+        <a class="button" href="#run-locally">Run Locally</a>
+      </div>
+    </section>
+
+    <section id="overview" class="section">
+      <h2>Project Overview</h2>
+      <p>Helping Hands NGO is a PHP-based nonprofit website designed to manage campaigns, accept donations, organize volunteers, and present events in a polished public interface.</p>
+      <p>The project includes a fully structured front-end with PHP templates, backend database files, and documentation so the app can be deployed quickly in a local or hosted PHP/MySQL environment.</p>
+      <ul class="feature-list">
+        <li>Donation management and receipt tracking</li>
+        <li>Volunteer signup and profile handling</li>
+        <li>Event listings with schedule details</li>
+        <li>Reports and documentation generation</li>
+      </ul>
+      <div class="note">
+        <strong>Note:</strong> GitHub Pages shows this static landing page only. The full PHP site runs on a web server with PHP and MySQL support.
+      </div>
+    </section>
+
+    <section id="file-list" class="section">
+      <h2>Key files and features</h2>
+      <div class="link-grid">
+        <div class="card"><a href="index.php">index.php</a><p>Home page showing events, donations, and latest content from the database.</p></div>
+        <div class="card"><a href="about.php">about.php</a><p>Organization overview and mission page.</p></div>
+        <div class="card"><a href="donation.php">donation.php</a><p>Donation form page for donor submissions.</p></div>
+        <div class="card"><a href="programs.php">programs.php</a><p>Programs and service descriptions.</p></div>
+        <div class="card"><a href="events.php">events.php</a><p>List of events and event details.</p></div>
+        <div class="card"><a href="contact.php">contact.php</a><p>Contact information and inquiry form.</p></div>
+        <div class="card"><a href="volunteer.php">volunteer.php</a><p>Volunteer registration page.</p></div>
+        <div class="card"><a href="documentation.php">documentation.php</a><p>Project documentation page for the site.</p></div>
+        <div class="card"><a href="reports.php">reports.php</a><p>Reports page displaying data-driven results.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Source code and database</h2>
+      <div class="link-grid">
+        <div class="card"><a href="includes/functions.php">includes/functions.php</a><p>Core helper functions, database access, and app logic.</p></div>
+        <div class="card"><a href="includes/header.php">includes/header.php</a><p>Page header and layout load logic.</p></div>
+        <div class="card"><a href="config/database.php">config/database.php</a><p>Database connection settings.</p></div>
+        <div class="card"><a href="database.sql">database.sql</a><p>Main database schema and sample data export.</p></div>
+        <div class="card"><a href="database_documentation.sql">database_documentation.sql</a><p>Documentation-related database export.</p></div>
+        <div class="card"><a href="README_NEW_DESIGN.md">README_NEW_DESIGN.md</a><p>Project documentation and design system notes.</p></div>
+      </div>
+    </section>
+
+    <section id="run-locally" class="section">
+      <h2>How to run the full site</h2>
+      <p>Use a local PHP/MariaDB environment to preview the full dynamic site and database features:</p>
+      <pre>1. Install XAMPP or WAMP.
+2. Place the repository folder inside your server document root.
+3. Import <code>database.sql</code> into MySQL.
+4. Open <code>http://localhost/Helping Hands NGO.php/</code> in a browser.
+5. Use <code>index.php</code> to access the website.</pre>
+      <div class="tip">
+        <strong>Tip:</strong> This `index.html` is best for a public GitHub Pages preview and for guiding reviewers to the right project files.</div>
+    </section>
+  </main>
+</body>
+</html>
